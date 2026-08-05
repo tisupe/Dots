@@ -1,8 +1,0 @@
-copy
-paste
-undo
-
-
-echo -ne '\e[6 q'
-printf '\e[6 q'
-

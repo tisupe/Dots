@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DECO_FILE="/home/tisupe/.config/hypr/decoration.lua"
+DECO_REQ='require("decorations.vibrance")'
+
+if grep -qF "$DECO_REQ" "$DECO_FILE"; then
+    sed -i "/$DECO_REQ/d" "$DECO_FILE"
+else
+    # If it doesn't exist, add it
+    echo "$DECO_REQ" >> "$DECO_FILE"
+fi
+
+hyprctl reload
