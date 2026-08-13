@@ -1,0 +1,15 @@
+include /usr/share/nano/*.nanorc
+
+set softwrap
+set constantshow
+set linenumbers
+set historylog
+set positionlog
+set indicator
+set minibar
+set trimblanks
+set mouse
+set nonewlines
+set tabsize 4
+set autoindent
+set casesensitive
